@@ -24,7 +24,7 @@ class Signup extends React.Component {
     }
   
     handleSubmit(event) {
-      console.log("A user was submitted: " + "\n" + "Username: " + this.state.username + "\n" + "Password: " + this.state.password + "\n" + "DOB: " + this.state.dob);
+      // console.log("A user was submitted: " + "\n" + "Username: " + this.state.username + "\n" + "Password: " + this.state.password + "\n" + "DOB: " + this.state.dob);
       event.preventDefault();
     }
   
@@ -49,9 +49,9 @@ class Signup extends React.Component {
     }
   }
   
-  ReactDOM.render(
-    <Signup />,
-    document.getElementById('root')
-  );
+  // ReactDOM.render(
+  //   <Signup />,
+  //   document.getElementById('root')
+  // );
  
 export default Signup;
