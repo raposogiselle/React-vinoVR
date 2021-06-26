@@ -4,6 +4,7 @@ class Signup extends React.Component {
     constructor(props) {
       super(props);
       this.state = {
+        email: '',
         username: '',
         password: '',
         dob: '',
@@ -24,13 +25,17 @@ class Signup extends React.Component {
     }
   
     handleSubmit(event) {
-      // console.log("A user was submitted: " + "\n" + "Username: " + this.state.username + "\n" + "Password: " + this.state.password + "\n" + "DOB: " + this.state.dob);
+      // console.log("A user was submitted: " + "\n" + "Email: " + this.state.email + "\n" + "Username: " + this.state.username + "\n" + "Password: " + this.state.password + "\n" + "DOB: " + this.state.dob);
       event.preventDefault();
     }
   
     render() {
       return (
         <form onSubmit={this.handleSubmit}>
+          <label>
+            Email:
+            <input name="email" type="text" value={this.state.value} onChange={this.handleChange} />
+          </label>
           <label>
             Username:
             <input name="username" type="text" value={this.state.value} onChange={this.handleChange} />
