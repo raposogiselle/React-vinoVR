@@ -1,16 +1,16 @@
 import './App.css';
 import About from './components/About';
-import login from './components/login';
-import signup from './components/signup';
+import Login from './components/Login';
+import Signup from './components/Signup';
 
 function App() {
   return (
-      <div>
-        <About />
-        <login />
-        <signup />
-      </div>
-
+    <div>
+      <About />
+      <Login />
+      <Signup />
+    </div>
+    
   );
 
 }
