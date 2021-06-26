@@ -1,4 +1,3 @@
-  
 import React from "react"
  
 class Signup extends React.Component {
@@ -7,7 +6,7 @@ class Signup extends React.Component {
       this.state = {
         username: '',
         password: '',
-        DOB: '',
+        dob: '',
       };
   
       this.handleChange = this.handleChange.bind(this);
@@ -25,7 +24,7 @@ class Signup extends React.Component {
     }
   
     handleSubmit(event) {
-      console.log('A user was submitted: ' + this.state.username + this.state.password + this.state.dob);
+      console.log("A user was submitted: " + "\n" + "Username: " + this.state.username + "\n" + "Password: " + this.state.password + "\n" + "DOB: " + this.state.dob);
       event.preventDefault();
     }
   
@@ -34,15 +33,15 @@ class Signup extends React.Component {
         <form onSubmit={this.handleSubmit}>
           <label>
             Username:
-            <input type="text" value={this.state.value} onChange={this.handleChange} />
+            <input name="username" type="text" value={this.state.value} onChange={this.handleChange} />
           </label>
           <label>
             Password:
-            <input type="password" value={this.state.value} onChange={this.handleChange} />
+            <input name="password" type="password" value={this.state.value} onChange={this.handleChange} />
           </label>
           <label>
             DOB:
-            <input type="date" value={this.state.value} onChange={this.handleChange} />
+            <input name="dob" type="date" value={this.state.value} onChange={this.handleChange} />
           </label>
           <input type="submit" value="Submit" />
         </form>
