@@ -23,7 +23,7 @@ class Login extends React.Component {
     }
   
     handleSubmit(event) {
-      console.log("A user logged in: " + "\n" + "Username: " + this.state.username + "\n" + "Password: " + this.state.password);
+      // console.log("A user logged in: " + "\n" + "Username: " + this.state.username + "\n" + "Password: " + this.state.password);
       event.preventDefault();
     }
   
@@ -44,9 +44,9 @@ class Login extends React.Component {
     }
   }
   
-  ReactDOM.render(
-    <Login />,
-    document.getElementById('root')
-  );
+  // ReactDOM.render(
+  //   <Login />,
+  //   document.getElementById('root')
+  // );
  
 export default Login;
