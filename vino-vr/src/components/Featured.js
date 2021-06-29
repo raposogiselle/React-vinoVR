@@ -1,9 +1,62 @@
-import React from "react";
+import React, { useState } from "react";
+import Button from 'react-bootstrap/Button';
 import Carousel from 'react-bootstrap/Carousel';
 import Modal from "react-bootstrap/Modal";
-import Button from 'react-bootstrap/Button';
+// import Wine from 'testImg.jpg';
+// import React, { Component, render } from 'react';
+// import ReactDOM from 'react-dom';
+// import "react-responsive-carousel/lib/styles/carousel.min.css"; 
+// import { Carousel } from 'react-responsive-carousel';
+import WineImg from '../images/testImg2.jpg'; // Tell webpack this JS file uses this image
+import '../styles/Featured.css'
+//console.log(WineImg); // /logo.84287d09.png
 
-function FeaturedCarouselModals() {
+// function Featured() {
+//   // Import result is the URL of your image
+//   return (
+
+//     <Carousel>
+//     <Carousel.Item interval={1000}>
+//         <img
+//         className="d-block w-50 m-auto"
+//         src={WineImg}
+//         alt="First slide"
+//         />
+//         <Carousel.Caption>
+//         <h3>First slide label</h3>
+//         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+//         </Carousel.Caption>
+//     </Carousel.Item>
+//     <Carousel.Item interval={500}>
+//         <img
+//         className="d-block w-50 m-auto"
+//         src={WineImg}
+//         alt="Second slide"
+//         />
+//         <Carousel.Caption>
+//         <h3>Second slide label</h3>
+//         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+//         </Carousel.Caption>
+//     </Carousel.Item>
+//     <Carousel.Item>
+//         <img
+//         className="d-block w-50 m-auto"
+//         src={WineImg}
+//         alt="Third slide"
+//         />
+//         <Carousel.Caption>
+//         <h3>Third slide label</h3>
+//         <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+//         </Carousel.Caption>
+//     </Carousel.Item>
+
+//     {/* <img src={WineImg} alt="Logo" /> */}
+//     </Carousel>
+    
+// )};
+
+
+function Featured() {
     const [show1, setShow1] = useState(false);
     const [show2, setShow2] = useState(false);
     const [show3, setShow3] = useState(false);
@@ -11,11 +64,12 @@ function FeaturedCarouselModals() {
     return (
     <>
         
-        <Carousel>
+        
+         <Carousel>
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src="holder.js/800x400?text=First slide&bg=373940"
+                    src={WineImg}
                     alt="First slide"
                 />
                 <Carousel.Caption>
@@ -30,7 +84,7 @@ function FeaturedCarouselModals() {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src="holder.js/800x400?text=Second slide&bg=282c34"
+                    src={WineImg}
                     alt="Second slide"
                 />
             
@@ -46,7 +100,7 @@ function FeaturedCarouselModals() {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src="holder.js/800x400?text=Third slide&bg=20232a"
+                    src={WineImg}
                     alt="Third slide"
                 />
             
@@ -104,7 +158,7 @@ function FeaturedCarouselModals() {
                     Add To favorites     
                 </Button>
             </Modal.Footer>
-        </Modal>
+        </Modal> 
     </>
      );
 }
