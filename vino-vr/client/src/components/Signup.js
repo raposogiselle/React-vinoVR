@@ -1,4 +1,6 @@
-import React from "react"
+import React from "react";
+import BgLightImg from '../images/bg-light-landingpage-general.png'; // Tell webpack this JS file uses this image
+
  
 export class Signup extends React.Component {
     constructor(props) {
