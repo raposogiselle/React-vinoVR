@@ -1,4 +1,6 @@
 import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import WineBar from './components/Navbar';
 import About from './components/About';
 import Featured from './components/Featured';
@@ -15,22 +17,19 @@ import Home from './components/Home';
 // import Navbar from 'react-bootstrap/esm/Navbar';
 
 
-
-
-
 function App() {
   return (
     <Router>
       <div>
-        <Navbar />
-        <Wrapper>
-          <Route exact path="/home" component={Home} />
+        <WineBar />
+       
+          <Route exact path="/" component={Home} />
           <Route exact path="/about" component={About} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/signup" component={Signup} />
           <Route exact path="/featured" component={Featured} />
-          <Route exact path="/myfavorite" component={favorites} />
-        </Wrapper>
+          <Route exact path="/myfavorite" component={Favorites} />
+
         <Footer />
       </div>
     </Router>
