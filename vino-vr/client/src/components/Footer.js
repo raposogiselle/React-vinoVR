@@ -10,7 +10,7 @@ function Footer() {
               <p>wineWithUs@vinovr.com</p>
             </div>
             <div className="d-flex">
-              <a href="tel:123.456.7890">123.456.7890</a>
+              <a href="tel:123.456.7890">+1(347)524-9497</a>
             </div>
             <div className="d-flex">
               <p>2021 Bordeaux Ln. Cellar #1 <br></br>
@@ -28,7 +28,6 @@ function Footer() {
                 <br />
                 <a className="footer-nav">Contact Us</a>
               </div>
-            
             </div>
           </div>
         </div>
