@@ -27,7 +27,7 @@ function App() {
           <Route exact path="/login" component={Login} />
           <Route exact path="/signup" component={Signup} />
           <Route exact path="/featured" component={Featured} />
-          <Route exact path="/myfavorite" component={Favorites} />
+          <Route exact path="/favorites" component={Favorites} />
         <Footer />
       </div>
     </Router>

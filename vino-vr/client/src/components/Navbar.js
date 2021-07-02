@@ -7,7 +7,7 @@ function WineBar() {
 
     return (
 <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-  <Navbar.Brand href="#home">     
+  <Navbar.Brand href="/">     
   <img
         alt="VinoVR logo"
         src={Logo}
@@ -20,8 +20,8 @@ function WineBar() {
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="ml-auto" >
-      <Nav.Link href="#features">Featured Wines</Nav.Link>
-      <Nav.Link href="#pricing">My Favorites</Nav.Link>
+      <Nav.Link href="/featured">Featured Wines</Nav.Link>
+      <Nav.Link href="/favorites">My Favorites</Nav.Link>
       <NavDropdown title="About" id="collasible-nav-dropdown">
         <NavDropdown.Item href="https://github.com/raposogiselle" target="_blank">Giselle</NavDropdown.Item>
         <NavDropdown.Item href="https://github.com/graceyangyxt" target="_blank">Grace</NavDropdown.Item>
@@ -33,11 +33,11 @@ function WineBar() {
     </Nav>
     <Nav className="ml-auto">
         <>
-        <Button variant="outline-success" size="sm" className="LoginButton" >
+        <Button variant="outline-success" size="sm" className="LoginButton" href="/login" >
             Login
         </Button>
         
-        <Button variant="outline-primary" size="sm">
+        <Button variant="outline-primary" size="sm" href="/signup">
             Sign Up
         </Button>
         </>
