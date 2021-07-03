@@ -1,53 +1,60 @@
-import React from "react"
+import React,{useState} from "react"
 import BgLightImg from '../images/bg-light-landingpage-general.png'; // Tell webpack this JS file uses this image
 
  
-export class Login extends React.Component {
-    constructor(props) {
-      super(props);
-      this.state = {
-        username: '',
-        password: '',
-      };
-  
-      this.handleChange = this.handleChange.bind(this);
-      this.handleSubmit = this.handleSubmit.bind(this);
-    }
-  
-    handleChange(event) {
-      const target = event.target;
-      const value = target.value;
-      const name = target.name;
+function Login()  {
+    const [username,setUsername]=useState();
+    const [password,setPassword]=useState();
+
+     const handleSubmit = e => {
+          e.preventDefault();
+          console.log("username is " + username);
+          console.log("password is " + password);
+     };
       
-      this.setState({
-        [name]: value
-      });
-    }
+     
   
-    handleSubmit(event) {
-      // console.log("A user logged in: " + "\n" + "Username: " + this.state.username + "\n" + "Password: " + this.state.password);
-      event.preventDefault();
-    }
   
-    render() {
+  
+  
       return (
         <div>
           <h1>LOGIN</h1>
-          <form onSubmit={this.handleSubmit}>
+          <form onSubmit={handleSubmit}>
             <label>
               Username:
-              <input name="username" type="text" value={this.state.value} onChange={this.handleChange} />
+                <input 
+                    className="username" 
+                    type="text" 
+                    name="username" 
+                    onChange={ e => setUsername(e.target.value)} 
+                />
             </label>
             <label>
               Password:
-              <input name="password" type="password" value={this.state.value} onChange={this.handleChange} />
+                <input 
+                    className="password"
+                    type="password" 
+                    name="password" 
+                    onChange={e => setPassword(e.target.value)} 
+                />
             </label>
-            <input type="submit" value="Submit" />
+            <button 
+                  className="signInButton"
+                  type="submit" 
+                  value="Submit" 
+            >
+              Sign In
+            </button>
           </form>
+          <div className="linkToSignUp">
+               Not a member?
+               <a href="/signup"><strong className="linkToSignUp">Create an account</strong></a>
+          </div>
         </div>
       );
     }
-  }
+  
   
   // ReactDOM.render(
   //   <Login />,
