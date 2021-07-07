@@ -10,9 +10,23 @@ function Login()  {
           e.preventDefault();
           console.log("username is " + username);
           console.log("password is " + password);
+          if(username && password){
+            const res = fetch("/api/user/login",{
+              method:"POST",
+              body:JSON.stringify({username,password}),
+              headers:{ "Content-Type": "application/json" }
+            })
+            if (res.ok){
+              document.location.replace("/");
+            }else {
+              alert("Failed to log in");
+            }
+          
+          }
      };
-      
-     
+    
+    
+
   
   
   
