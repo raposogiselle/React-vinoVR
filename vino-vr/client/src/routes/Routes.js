@@ -1,8 +1,8 @@
 import React from "react";
 // import { Component } from "react";
 import { Redirect, Route, Switch } from "react-router-dom";
-import SignIn from "../components/SignIn2";
-import SignUp from "../components/SignUp2";
+import SignIn from "../components/SignIn";
+import SignUp from "../components/SignUp";
 import SignedIn from "../components/Navbar2";
 // import MyFavs from "../components/Favorites";
 
