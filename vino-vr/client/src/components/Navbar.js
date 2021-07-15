@@ -20,6 +20,7 @@ function WineBar() {
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="ml-auto" >
+      <Nav.Link href="/mood">Mood</Nav.Link>
       <Nav.Link href="/featured">Featured Wines</Nav.Link>
       <Nav.Link href="/favorites">My Favorites</Nav.Link>
       <NavDropdown title="About" id="collasible-nav-dropdown">
