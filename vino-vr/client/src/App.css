@@ -18,7 +18,7 @@ body {
 
 .header-wrapper {
     position: relative;
-    background: url(images/BGgeneral.png);
+    /* background: url(images/BGgeneral.png); */
     background-size: cover;
     background-position: center;
     height: 90vh;

@@ -1,0 +1,28 @@
+:root{
+    --bg-brown: rgba(23, 5, 0, 0.8);
+    --primary-yellow:rgba(244, 229, 196, 1);
+     
+}
+#btnGroup{
+    
+    display: inline;
+   
+   
+}
+#btn-mood{
+    background: rgba(255,254,254,0);
+    border: 1px solid #F4E5C4;
+    border-radius: 50%;
+    width: 65px;
+    height:65px;
+    margin: 15px;
+    color:#F4E5C4;
+    padding-left: 1em;
+    text-align: center;
+    padding:0.5em;
+
+}
+#btn-mood:hover{
+    background: rgba(255,254,254,0.3);
+    font-weight:500;
+}

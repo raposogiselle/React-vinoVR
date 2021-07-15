@@ -2,6 +2,7 @@ import React, { useState } from "react";
 // import Typed from "react-typed";
 import API from "../utils/Api";
 import WineCard from "./WineCard/WineCard";
+import "../styles/Mood.css"
 
 const Mood = () => {
     const [wines, setWines] = useState([]);
@@ -16,14 +17,16 @@ const Mood = () => {
                     {wines.map(wine => (
                         <WineCard name={wine.name} img={wine.img} key={wine.id}/>
                      ) )} 
-                    <button className="btn-mood" onClick={ () => setWines([])}>Choose a new mood</button> 
+                    <button id="btn-mood" className="btn-mood" onClick={ () => setWines([])}>Choose a new mood</button> 
                 </div>
                 :
                 <div className="main-info">
-                    <button className="btn-mood" onClick={ () => selectWineByMood('relax')}>Relax</button> 
-                    <button className="btn-mood" onClick={ () => selectWineByMood('sexy')}>Sexy</button> 
-                    <button className="btn-mood" onClick={ () => selectWineByMood('stressed')}>Stress</button> 
-                    <button className="btn-mood" onClick={ () => selectWineByMood('happy')}>Happy</button> 
+                  <div id="btnGroup">
+                    <button id="btn-mood" className="btn-mood" onClick={ () => selectWineByMood('relax')}>Relax</button> 
+                    <button id="btn-mood" className="btn-mood" onClick={ () => selectWineByMood('sexy')}>Sexy</button> 
+                    <button id="btn-mood" className="btn-mood" onClick={ () => selectWineByMood('stressed')}>Stress</button> 
+                    <button id="btn-mood" className="btn-mood" onClick={ () => selectWineByMood('happy')}>Happy</button> 
+                  </div>
                 </div>
             }
         </div>
