@@ -1,5 +1,5 @@
 import React,{useState} from "react"
-import BgLightImg from '../images/bg-light-landingpage-general.png'; // Tell webpack this JS file uses this image
+import BGgeneral from '../images/BGgeneral.png'; // Tell webpack this JS file uses this image
 
  
 function Login()  {

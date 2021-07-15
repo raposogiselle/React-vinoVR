@@ -7,7 +7,7 @@ import Modal from "react-bootstrap/Modal";
 // import ReactDOM from 'react-dom';
 // import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 // import { Carousel } from 'react-responsive-carousel';
-import BgLightImg from '../images/bg-light-landingpage-general.png'; // Tell webpack this JS file uses this image
+import BGgeneral from '../images/BGgeneral.png'; // Tell webpack this JS file uses this image
 import '../styles/Featured.css'
 //console.log(WineImg); // /logo.84287d09.png
 
@@ -69,7 +69,7 @@ function Featured() {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src={BgLightImg}
+                    src={BGgeneral}
                     alt="First slide"
                 />
                 <Carousel.Caption>
@@ -84,7 +84,7 @@ function Featured() {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src={BgLightImg}
+                    src={BGgeneral}
                     alt="Second slide"
                 />
             
@@ -100,7 +100,7 @@ function Featured() {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src={BgLightImg}
+                    src={BGgeneral}
                     alt="Third slide"
                 />
             
