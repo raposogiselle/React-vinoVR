@@ -7,15 +7,14 @@ function NavBar() {
 
     return (
 <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-  <Navbar.Brand href="/">     
+  <Navbar.Brand href="/" className="logoDiv">     
   <img
         alt="VinoVR logo"
         src={Logo}
-        width="70"
+        width="90"
         height="70"
-        className="d-inline-block align-top"
-      />{' '}
-      VinoVR
+        className="d-inline-block align-top logImg"
+      />
   </Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
