@@ -54,6 +54,10 @@ export class Signup extends React.Component {
             </label>
             <input type="submit" value="Submit" />
           </form>
+          <div className="linkToLogin">
+               Already a member?
+               <a href="/login"><strong className="linkToLogin">Please log in!</strong></a>
+          </div>
         </div>
       );
     }
