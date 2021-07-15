@@ -5,7 +5,7 @@ function WineCard(props) {
     return (
       <div className="card">
         <div className="img-container">
-          <img src={props.img} />
+          <img src={props.img} alt="iamge"/>
         </div>
         <div className="content">
           <ul>
