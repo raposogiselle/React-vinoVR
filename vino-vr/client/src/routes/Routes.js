@@ -13,9 +13,9 @@ import AuthApi from "../utils/AuthApi"
 function Routes() {
     return (
         <Switch>
-            <RouteRegistration path="/SignIn" component={SignIn} /> 
-            <RouteRegistration path="/SignUp" component={SignUp} /> 
-            <RouteProtected path="/SignedIn" component={SignedIn} />
+            <RouteRegistration path="/Signin" component={SignIn} /> 
+            <RouteRegistration path="/Signup" component={SignUp} /> 
+            <RouteProtected path="/Signedin" component={SignedIn} />
         </Switch>
     );
 }
@@ -23,12 +23,12 @@ function Routes() {
 const RouteRegistration = ({component: Component, ...rest}) => {
 
     const authApi = React.useContext(AuthApi);
-    return <Route {...rest} render= {props=> !authApi.auth ? (<Component {...props} />) : <Redirect to='/SignedIn' />} />;
+    return <Route {...rest} render= {props=> !authApi.auth ? (<Component {...props} />) : <Redirect to='/Signedin' />} />;
 
 };
 const RouteProtected = ({component: Component, ...rest}) => {
     const authApi = React.useContext(AuthApi);
-    return <Route {...rest} render= {(props)=> authApi.auth ? (<Component {...props} />) : <Redirect to='/SignIn'/>} />;
+    return <Route {...rest} render= {(props)=> authApi.auth ? (<Component {...props} />) : <Redirect to='/Signin'/>} />;
 };
 
 export default Routes;
