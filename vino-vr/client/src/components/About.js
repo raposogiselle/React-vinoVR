@@ -1,11 +1,11 @@
 import React from "react";
 import "../styles/About.css"
-import BgLightImg from '../images/bg-light-landingpage-general.png'; // Tell webpack this JS file uses this image
+import BGgeneral from '../images/BGgeneral.png'; // Tell webpack this JS file uses this image
 
 
 function About() {
   return (
-    <div style={{backgroundImage:"url("+{BgLightImg}+")"}}>
+    <div style={{backgroundImage:"url("+{BGgeneral}+")"}}>
       <h1>About Us</h1>
       <div className ="card">
       <img src="" alt="" style={{width: "100%"}}/>
