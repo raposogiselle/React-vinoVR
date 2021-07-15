@@ -1,3 +1,21 @@
 .LoginButton {
     margin-right: .5rem;
 };
+
+.logImg {
+    object-fit: fill;
+};
+
+.logoDiv{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    object-fit: fill;
+    
+};
+
+.logoP {
+    margin-bottom: 0 p !important
+}

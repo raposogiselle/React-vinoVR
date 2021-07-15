@@ -14,6 +14,7 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import authApi from '../utils/AuthApi';
+import '../styles/signIn.css';
 
 
 //use react router redirect to send to login page
@@ -49,6 +50,7 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
+    color: '#F4E5CA;',
   },
   avatar: {
     margin: theme.spacing(1),
@@ -73,7 +75,7 @@ const useStyles = makeStyles((theme) => ({
         <Avatar className={classes.avatar}>
           <LockOutlinedIcon />
         </Avatar>
-        <Typography component="h1" variant="h5">
+        <Typography component="h1" variant="h5" style={{color: "#F4E5CA"}}>
           Sign up
         </Typography>
         <form className={classes.form} noValidate>

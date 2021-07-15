@@ -26,7 +26,7 @@ function Favorites() {
                             <ListGroup.Item>Description:</ListGroup.Item>
                             <ListGroup.Item> <button>Favorite</button></ListGroup.Item>
                         </ListGroup> */}
-                        <ul>
+                        <ul style={{color: "#F4E5CA"}}>
                         <li>Veuve Clic:</li>
                         <li>Country of Origin:</li>
                         <li>Year:</li>
