@@ -1,6 +1,6 @@
 <h1 align="center">VinoVR-Experience</h1> <br>
 
-![picture](./client/src/images/reactscreenshot.png)
+![picture](vino-vr/client/src/images/reactscreenshot.png)
 
 <p align="center">
 A browser-based VR experience that allows you to find new wines to try or enjoy your own in a scenic Mediterranean villa, with music that matches your mood. This is an extension of our portal site
