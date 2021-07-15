@@ -4,7 +4,7 @@ import NavBar from './components/Navbar';
 // import NavBar2 from './components/Navbar2';
 import Header from './components/Header';
 import  Mood from './components/Mood';
-import About from './components/About';
+// import About from './components/About';
 import Featured from './components/Featured';
 // import SignIn from './components/SignIn2';
 // import Signup from './components/SignUp2';
@@ -21,15 +21,15 @@ function App() {
    <AuthApi.Provider value={{ auth, setAuth }}>           
     <Router>
       <div>
-        <WineBar />
+        <NavBar />
           <Route exact path="/" component={Header} />
              <Routes />
             {/* <Route exact path="/login" component={SignIn} />
             <Route exact path="/signup" component={Signup} /> */}
-          <Route exact path="/about" component={About} />
+          {/* <Route exact path="/about" component={About} /> */}
           <Route exact path="/mood" component={Mood} />
-          <Route exact path="/login" component={Login} />
-          <Route exact path="/signup" component={Signup} />
+          {/* <Route exact path="/login" component={Login} />
+          <Route exact path="/signup" component={Signup} /> */}
           <Route exact path="/featured" component={Featured} />
           <Route exact path="/favorites" component={Favorites} />
          <Footer />
