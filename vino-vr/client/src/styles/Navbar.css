@@ -1,3 +1,49 @@
+:root {
+    --vinoChardonay:  #F4E5CA;
+    --vinoBordeaux: #180904;
+}
 .LoginButton {
     margin-right: .5rem;
 };
+.navbg{
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#navLink, #collasible-nav-dropdown{
+    color: rgba(244, 229, 196, 0.8);
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;
+    font-weight: 400;
+}
+#navLink:hover{
+    color: rgba(244, 229, 196, 1);
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;
+    font-weight: 500;
+}
+#collasible-nav-dropdown:hover{
+    color: rgba(244, 229, 196, 1);
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;
+    font-weight: 500;
+}
+#LoginButton, #SignupButton{
+    width:100px;
+    height:32px;
+    background: rgba(244, 229, 196, 0);
+    border: 1px solid #F4E5CA;
+    border-radius: 33px;
+    color: #F4E5CA;
+    font-weight: 400;
+}
+#LoginButton:hover {
+    color: #180904;
+    background: rgba(244, 229, 196, 0.3);
+    font-weight: 500;
+  }
+#SignupButton:hover {
+color: #180904;
+background: rgba(244, 229, 196, 0.3);
+font-weight: 500;
+}
+

@@ -1,6 +1,6 @@
 import React from "react";
 import BgLightImg from '../images/bg-light-landingpage-general.png'; // Tell webpack this JS file uses this image
-
+import "../styles/Signup.css"
  
 export class Signup extends React.Component {
     constructor(props) {
@@ -33,27 +33,40 @@ export class Signup extends React.Component {
   
     render() {
       return (
-        <div>
-          <h1>SIGNUP</h1>
+        <div className="bg">
+        <div className="signupCard">
+          <h1 id="signupTitle">SIGN UP</h1>
           <form onSubmit={this.handleSubmit}>
-            <label>
-              Email:
-              <input name="email" type="text" value={this.state.value} onChange={this.handleChange} />
-            </label>
-            <label>
-              Username:
-              <input name="username" type="text" value={this.state.value} onChange={this.handleChange} />
-            </label>
-            <label>
-              Password:
-              <input name="password" type="password" value={this.state.value} onChange={this.handleChange} />
-            </label>
-            <label>
-              DOB:
-              <input name="dob" type="date" value={this.state.value} onChange={this.handleChange} />
-            </label>
-            <input type="submit" value="Submit" />
+            <div className="field">
+              <label className="label">USER NAME</label>
+              <div className="subfield">
+                <input id="input" name="username" type="text" style={{color:'#F4E5C4'}} placeholder="VinoVR" value={this.state.value} onChange={this.handleChange} />
+              </div>
+            </div>
+            <div className="field">
+              <label className="label">EMAIL ADDRESS</label>
+              <div className="subfield">
+                 <input id="input" name="email" type="text" style={{color:'#F4E5C4'}} placeholder="vinovr@mail.com" value={this.state.value} onChange={this.handleChange} />  
+              </div>
+              
+            </div>
+            <div className="field">
+              <label className="label">PASSWORD</label>
+              <div className="subfield">             
+                 <input id="input" name="password" type="password" style={{color:'#F4E5C4'}} placeholder="******" value={this.state.value} onChange={this.handleChange} />
+              </div>
+            </div>
+            <div className="field">
+              <label className="label">BIRTHDAY</label>
+              <div className="subfield">
+              <input id="input" name="dob" type="date" style={{color:'#F4E5C4'}} value={this.state.value} onChange={this.handleChange} />
+              </div>
+            </div>
+            <div className="buttonField" >
+              <input id="signUpUser" type="submit" value="SIGN UP" />
+            </div>
           </form>
+        </div>
         </div>
       );
     }

@@ -6,8 +6,9 @@ import '../styles/Navbar.css'
 function WineBar() {
 
     return (
-<Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-  <Navbar.Brand href="/">     
+<Navbar collapseOnSelect expand="lg" className="navbg" >
+{/* <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark"> */}
+  <Navbar.Brand style={{color: '#F4E5CA'}} href="/">     
   <img
         alt="VinoVR logo"
         src={Logo}
@@ -20,11 +21,11 @@ function WineBar() {
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="ml-auto" >
-      <Nav.Link href="/mood">Mood</Nav.Link>
-      <Nav.Link href="/featured">Featured Wines</Nav.Link>
-      <Nav.Link href="/favorites">My Favorites</Nav.Link>
-      <NavDropdown title="About" id="collasible-nav-dropdown">
-        <NavDropdown.Item href="https://github.com/raposogiselle" target="_blank">Giselle</NavDropdown.Item>
+      <Nav.Link id="navLink" href="/mood">MOOD</Nav.Link>
+      <Nav.Link id="navLink" href="/featured">FEATURED WINES</Nav.Link>
+      <Nav.Link id="navLink" href="/favorites">MY FAVORITES</Nav.Link>
+      <NavDropdown  title="ABOUT" id="collasible-nav-dropdown">
+        <NavDropdown.Item  href="https://github.com/raposogiselle" target="_blank">Giselle</NavDropdown.Item>
         <NavDropdown.Item href="https://github.com/graceyangyxt" target="_blank">Grace</NavDropdown.Item>
         <NavDropdown.Item href="https://github.com/Luis0624" target="_blank">Luis</NavDropdown.Item>
         <NavDropdown.Item href="https://github.com/seanpweber" target="_blank">Sean</NavDropdown.Item>
@@ -34,12 +35,12 @@ function WineBar() {
     </Nav>
     <Nav className="ml-auto">
         <>
-        <Button variant="outline-success" size="sm" className="LoginButton" href="/login" >
-            Login
+        <Button style={{color: '#F4E5CA'}} size="sm" className="LoginButton" id="LoginButton" href="/login" >
+            LOGIN
         </Button>
         
-        <Button variant="outline-primary" size="sm" href="/signup">
-            Sign Up
+        <Button style={{color: '#F4E5CA'}} size="sm" id="SignupButton" href="/signup">
+            SIGN UP
         </Button>
         </>
       {/* <Nav.Link href="#deets">More deets</Nav.Link>

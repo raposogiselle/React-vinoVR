@@ -8,6 +8,10 @@
 body {
     font-family: 'Fira Sans', sans-serif;
     color: #F4E5CA;
+    background-image: url(./images/BGgeneral.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-size: 100vh; */
 }
 
 /* --------------------Header------------------- */

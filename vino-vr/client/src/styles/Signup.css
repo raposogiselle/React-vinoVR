@@ -1,0 +1,83 @@
+:root{
+    --bg-brown: rgba(23, 5, 0, 0.8);
+    --primary-yellow:#F4E5C4;
+     
+}
+.bg{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.signupCard{
+    width:60%;
+    height: 100vh;
+    background-color: var(--bg-brown);
+    border-radius: 3px;
+    border-style: none;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#input {
+    background: rgba(255,254,254,0);
+    border: 1px solid #F4E5C4;
+    border-radius: 8px;
+    width: 400px;
+    height:50px;
+    margin-bottom: 20px;
+    color:#F4E5C4;
+    padding-left: 1em;
+}
+.label{
+    color:var(--primary-yellow);
+    font-weight: 400;
+    font-size: 15px;
+}
+
+#signupTitle{
+    color:var(--primary-yellow);
+    text-align: center;
+    
+    font-size:28px;
+    font-weight: 400;
+}
+.buttonField{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+}
+#signUpUser{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    background: rgba(244, 229, 196, 0);
+    border: 1px solid #F4E5C4;
+    border-radius: 33px;
+    width: 250px;
+    height:50px;
+    margin: 30px;
+    color:#F4E5C4;
+    font-size: 18px;
+    
+}
+#signUpUser:hover{
+    background: rgba(244, 229, 196, 0.3);
+    font-weight: 500;
+}
+#input{
+    color:rgba(244, 229, 196, 0.3)
+}
+
+@media only screen and (max-width : 768px){
+    .signupCard{
+        width: 80%;
+    }
+    #input{
+        width:320px;
+    }
+}
