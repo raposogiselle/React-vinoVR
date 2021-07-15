@@ -1,6 +1,6 @@
 import React from 'react'; 
 import { Navbar, Nav, NavDropdown, Button } from 'react-bootstrap';
-import Logo from '../images/logo192.png'
+import Logo from '../images/vino-vr.png';
 import '../styles/Navbar.css'
 
 function NavBar() {
@@ -11,8 +11,8 @@ function NavBar() {
   <img
         alt="VinoVR logo"
         src={Logo}
-        width="30"
-        height="30"
+        width="70"
+        height="70"
         className="d-inline-block align-top"
       />{' '}
       VinoVR
