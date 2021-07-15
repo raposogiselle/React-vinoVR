@@ -1,9 +1,10 @@
 import React from 'react'; 
 import { Navbar, Nav, NavDropdown, Button } from 'react-bootstrap';
-import Logo from '../images/vino-vr.png';
+import Logo from '../images/logo192.png'
 import '../styles/Navbar.css'
+// import WineBar from './Navbar';
 
-function NavBar() {
+function Navbar2() {
 
     return (
 <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
@@ -11,8 +12,8 @@ function NavBar() {
   <img
         alt="VinoVR logo"
         src={Logo}
-        width="70"
-        height="70"
+        width="30"
+        height="30"
         className="d-inline-block align-top"
       />{' '}
       VinoVR
@@ -20,9 +21,8 @@ function NavBar() {
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="ml-auto" >
-      <Nav.Link href="/mood">Mood</Nav.Link>
       <Nav.Link href="/featured">Featured Wines</Nav.Link>
-      <Nav.Link href="/Favorites">My Favorites</Nav.Link>
+      <Nav.Link href="/favorites">My Favorites</Nav.Link>
       <NavDropdown title="About" id="collasible-nav-dropdown">
         <NavDropdown.Item href="https://github.com/raposogiselle" target="_blank">Giselle</NavDropdown.Item>
         <NavDropdown.Item href="https://github.com/graceyangyxt" target="_blank">Grace</NavDropdown.Item>
@@ -34,13 +34,13 @@ function NavBar() {
     </Nav>
     <Nav className="ml-auto">
         <>
-        <Button variant="outline-success" size="sm" className="LoginButton" href="/signin" >
-            Login
+        <Button variant="outline-danger" size="sm" className="signOutButton" href="/" >
+            Sign Out
         </Button>
         
-        <Button variant="outline-primary" size="sm" href="/signup">
+        {/* <Button variant="outline-primary" size="sm" href="/signup">
             Sign Up
-        </Button>
+        </Button> */}
         </>
       {/* <Nav.Link href="#deets">More deets</Nav.Link>
       <Nav.Link eventKey={2} href="#memes">
@@ -52,4 +52,4 @@ function NavBar() {
 
     )};
 
-export default NavBar;
+export default Navbar2;
